@@ -1,0 +1,17 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Michroma', sans-serif;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 2em;
+}
+
+.logo-img {
+  width: 70px;
+}
