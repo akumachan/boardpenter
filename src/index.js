@@ -8,14 +8,9 @@ import Create from './create/Create';
 import Created from './create/Created';
 import Join from './join/Join';
 import {BrowserRouter, Route} from 'react-router-dom';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
-import {reducer} from './redux/Reducer';
-
-const store = createStore(reducer);
 
 ReactDOM.render(
-  <Provider store={store}>
+  <div>
     <BrowserRouter>
       <Header />
       <Route exact path='/' component={Main} />
@@ -23,6 +18,6 @@ ReactDOM.render(
       <Route path='/created' component={Created} />
       <Route path='/join' component={Join} />
     </BrowserRouter>
-  </Provider>,
+  </div>,
   document.getElementById('root')
 );
