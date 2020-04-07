@@ -7,6 +7,7 @@ import Main from './main/Main';
 import Create from './create/Create';
 import Created from './create/Created';
 import Join from './join/Join';
+import Joined from './join/Joined';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path='/create' component={Create} />
       <Route path='/created' component={Created} />
       <Route path='/join' component={Join} />
+      <Route path='/joined' component={Joined} />
     </BrowserRouter>
   </div>,
   document.getElementById('root')
